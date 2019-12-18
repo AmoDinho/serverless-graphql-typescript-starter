@@ -6,3 +6,4 @@ exports.resolvers = {
         hello: (root, args, context) => query_1.hello(args, context)
     }
 };
+//# sourceMappingURL=index.js.map

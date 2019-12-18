@@ -32,3 +32,4 @@ exports.graphqlHandler = (event, context, callback) => {
     });
     return handler(event, context, callback);
 };
+//# sourceMappingURL=graphql.js.map

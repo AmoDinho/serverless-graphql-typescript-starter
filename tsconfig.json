@@ -3,8 +3,19 @@
         "target": "es6",
         "module": "commonjs",
         "outDir": "./dist",
-        "moduleResolution": "node"
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "noImplicitAny": true,
+        "lib": [
+            "es2017",
+            "esnext.asynciterable"
+        ],
+        "sourceMap": true,
+        "baseUrl": "."
     },
+    "include": [
+        "src/**/*"
+    ],
     "exclude": [
         "node_modules",
         ".serverless",

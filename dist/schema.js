@@ -13,3 +13,4 @@ type Query {
 
 `;
 exports.schema = schema;
+//# sourceMappingURL=schema.js.map
