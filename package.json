@@ -15,6 +15,7 @@
     "url": "https://github.com/pimp-my-book/serverless-graphql-nodejs-starter"
   },
   "devDependencies": {
+    "@types/graphql": "^14.5.0",
     "@types/node": "^12.12.20",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
@@ -32,7 +33,6 @@
     "webpack-node-externals": "^1.6.0"
   },
   "dependencies": {
-    "@types/graphql": "^14.5.0",
     "apollo-server-lambda": "^2.5.0",
     "babel-runtime": "^6.26.0",
     "graphql": "^14.3.0",

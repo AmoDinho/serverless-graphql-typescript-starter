@@ -2,7 +2,8 @@
     "compilerOptions": {
         "target": "es6",
         "module": "commonjs",
-        "outDir": "./dist"
+        "outDir": "./dist",
+        "moduleResolution": "node"
     },
     "exclude": [
         "node_modules",
@@ -10,8 +11,6 @@
         ".webpack"
     ],
     "types": [
-        "node",
-        "apollo-server-lambda",
-        "graphql"
+        "node"
     ]
 }
