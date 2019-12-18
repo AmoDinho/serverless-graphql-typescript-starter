@@ -22,6 +22,7 @@
         ".webpack"
     ],
     "types": [
-        "node"
+        "node",
+        "graphql"
     ]
 }

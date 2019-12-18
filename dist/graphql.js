@@ -9,7 +9,7 @@ const server = new apollo_server_lambda_1.ApolloServer({
     formatError: error => {
         return error;
     },
-    formatResponse: response => {
+    formatResponse: (response) => {
         return response;
     },
     context: ({ event, context }) => ({
