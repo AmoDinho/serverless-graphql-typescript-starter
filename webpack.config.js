@@ -27,6 +27,10 @@ module.exports = {
         loader: "babel-loader",
         include: __dirname,
         exclude: /node_modules/
+      }, {
+        test: /\.ts?$/,
+        loader: 'ts-loader',
+        exclude: /node_modules/
       }
     ]
   }
