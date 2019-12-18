@@ -4,7 +4,8 @@
   "description": "A GraphQL Node.js starter for the Serverless Framework with async/await and unit test support",
   "main": "handler.js",
   "scripts": {
-    "offline": "tsc -w && sls offline ",
+    "offline": " sls offline ",
+    "watch": "tsc -w",
     "deploy": "sls deploy",
     "test": "jest"
   },
@@ -20,6 +21,7 @@
   "devDependencies": {
     "@types/aws-lambda": "^8.10.39",
     "@types/graphql": "^14.5.0",
+    "@types/node": "^12.12.20",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
     "babel-plugin-source-map-support": "^1.0.0",
@@ -29,6 +31,7 @@
     "jest": "^21.2.1",
     "serverless-offline": "^3.25.6",
     "serverless-webpack": "^5.1.0",
+    "ts-loader": "^6.2.1",
     "tslint": "^5.20.1",
     "tslint-config-standard": "^9.0.0",
     "typescript": "^3.7.3",

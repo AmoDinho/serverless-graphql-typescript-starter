@@ -1,7 +1,7 @@
 import { ApolloServer } from "apollo-server-lambda";
 import { schema } from "./schema";
 import { resolvers } from "./resolvers";
-var typeDef = schema;
+//const typeDef: ITypeDefinitions = schema
 var server = new ApolloServer({
     typeDefs: schema,
     resolvers: resolvers,
