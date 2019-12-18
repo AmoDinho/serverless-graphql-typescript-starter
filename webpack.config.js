@@ -10,6 +10,7 @@ module.exports = {
   // we exclude all node dependencies
   externals: [nodeExternals()],
   mode: slsw.lib.webpack.isLocal ? "development" : "production",
+  resolve: { extensions: ['.ts'] },
   optimization: {
     // We do not want to minimize our code.
     minimize: false
@@ -25,6 +26,10 @@ module.exports = {
         test: /\.js$/,
         loader: "babel-loader",
         include: __dirname,
+        exclude: /node_modules/
+      }, {
+        test: /\.ts?$/,
+        loader: 'ts-loader',
         exclude: /node_modules/
       }
     ]

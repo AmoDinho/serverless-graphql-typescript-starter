@@ -1,28 +1,30 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const apollo_server_lambda_1 = require("apollo-server-lambda");
-const schema_1 = require("./schema");
-const resolvers_1 = require("./resolvers");
-const server = new apollo_server_lambda_1.ApolloServer({
-    typeDefs: schema_1.schema,
-    resolvers: resolvers_1.resolvers,
-    formatError: error => {
+import { ApolloServer } from "apollo-server-lambda";
+import { schema } from "./schema";
+import { resolvers } from "./resolvers";
+//const typeDef: ITypeDefinitions = schema
+var server = new ApolloServer({
+    typeDefs: schema,
+    resolvers: resolvers,
+    formatError: function (error) {
         return error;
     },
-    formatResponse: (response) => {
+    formatResponse: function (response) {
         return response;
     },
-    context: ({ event, context }) => ({
-        headers: event.headers,
-        functionName: context.functionName,
-        event,
-        context
-    }),
+    context: function (_a) {
+        var event = _a.event, context = _a.context;
+        return ({
+            headers: event.headers,
+            functionName: context.functionName,
+            event: event,
+            context: context
+        });
+    },
     tracing: true,
     playground: true
 });
-exports.graphqlHandler = (event, context, callback) => {
-    const handler = server.createHandler({
+exports.graphqlHandler = function (event, context, callback) {
+    var handler = server.createHandler({
         cors: {
             origin: "*",
             credentials: true,

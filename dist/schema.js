@@ -1,16 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const schema = `
-
-
-
-"""
-A hello world Query
-"""
-type Query {
-     hello: String!
-}
-
-`;
-exports.schema = schema;
+var schema = "\n\n\n\n\"\"\"\nA hello world Query\n\"\"\"\ntype Query {\n     hello: String!\n}\n\n";
+export { schema };
 //# sourceMappingURL=schema.js.map

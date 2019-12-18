@@ -11,4 +11,4 @@ type Query {
 
 `
 
-export {schema}
+export { schema }

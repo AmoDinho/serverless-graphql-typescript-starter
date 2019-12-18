@@ -1,9 +1,7 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const query_1 = require("./query");
-exports.resolvers = {
+import { hello } from "./query";
+export var resolvers = {
     Query: {
-        hello: (root, args, context) => query_1.hello(args, context)
+        hello: function (root, args, context) { return hello(args, context); }
     }
 };
 //# sourceMappingURL=index.js.map
