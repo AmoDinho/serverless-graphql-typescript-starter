@@ -171,6 +171,11 @@
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@protobufjs/utf8/-/utf8-1.1.0.tgz#a777360b5b39a1a2e5106f8e858f2fd2d060c570"
 
+"@types/aws-lambda@^8.10.39":
+  version "8.10.39"
+  resolved "https://registry.yarnpkg.com/@types/aws-lambda/-/aws-lambda-8.10.39.tgz#da83cf7a82695a8904e383d705829fecf96b7db2"
+  integrity sha512-6qxQ4wS636AapVvDbzltI/Xn69QWxjcvohvxd/+MTWzdE9Vqz1xgERr38jEbBGEkyyG8y819nAhjGsiY6KNh1A==
+
 "@types/events@*":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@types/events/-/events-3.0.0.tgz#2862f3f58a9a7f7c3e78d79f130dd4d71c25c2a7"
