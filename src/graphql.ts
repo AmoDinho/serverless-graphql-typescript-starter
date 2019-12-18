@@ -1,10 +1,12 @@
 import { ApolloServer, gql } from "apollo-server-lambda";
+import { ITypeDefinitions } from "graphql-tools/dist/Interfaces"
+import { Context, Callback, APIGatewayEvent } from "aws-lambda"
 import { schema } from "./schema";
 import { resolvers } from "./resolvers";
 
-
+const typeDefs: ITypeDefinitions = schema
 const server = new ApolloServer({
-	typeDefs: schema,
+	typeDefs: typeDefs,
 	resolvers: resolvers,
 	formatError: error => {
 		return error;
@@ -22,7 +24,7 @@ const server = new ApolloServer({
 	playground: true
 });
 
-exports.graphqlHandler = (event: any, context: any, callback: any) => {
+exports.graphqlHandler = (event: APIGatewayEvent, context: Context, callback: Callback) => {
 	const handler = server.createHandler({
 		cors: {
 			origin: "*",

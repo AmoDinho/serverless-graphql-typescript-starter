@@ -1,4 +1,4 @@
-const schema = `
+const schema: string = `
 
 
 
@@ -11,4 +11,4 @@ type Query {
 
 `
 
-export {schema}
+export { schema }
