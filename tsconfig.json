@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs"
+    },
+    "exclude": [
+        "node_modules",
+        ".serverless",
+        ".webpack"
+    ],
+    "types": [
+        "node",
+        "apollo-server-lambda",
+        "graphql"
+    ]
+}
