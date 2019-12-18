@@ -1,4 +1,4 @@
-const schema: string = `
+const schema = `
 
 
 

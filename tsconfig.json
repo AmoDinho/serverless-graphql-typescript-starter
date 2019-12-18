@@ -24,9 +24,5 @@
         "./node_modules",
         ".serverless",
         ".webpack"
-    ],
-    "types": [
-        "node",
-        "graphql"
     ]
 }

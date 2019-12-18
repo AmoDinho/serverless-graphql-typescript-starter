@@ -4,9 +4,9 @@ import { Context, Callback, APIGatewayEvent } from "aws-lambda"
 import { schema } from "./schema";
 import { resolvers } from "./resolvers";
 
-const typeDefs: ITypeDefinitions = schema
+const typeDef: ITypeDefinitions = schema
 const server = new ApolloServer({
-	typeDefs: typeDefs,
+	typeDefs: schema,
 	resolvers: resolvers,
 	formatError: error => {
 		return error;
