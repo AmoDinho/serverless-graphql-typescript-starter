@@ -1,5 +1,5 @@
 # NOTE: update this with your service name
-service: serverless-graphql-typescript-starter
+service: serverless-graphql-typescript-starter-i
 
 # Use the serverless-webpack plugin to transpile ES6
 plugins:
@@ -20,6 +20,7 @@ provider:
   runtime: nodejs10.x
   stage: dev
   region: us-east-1
+  profile: personalAccount
   # To load environment variables externally
   # rename env.example to env.yml and uncomment
   # the following line. Also, make sure to not
