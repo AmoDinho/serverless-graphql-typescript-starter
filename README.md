@@ -22,7 +22,7 @@ Note this project uses [Yarn](https://yarnpkg.com).
 First clone the repo:
 
 ```
-$ serverless install --url https://github.com/AmoDinho/serverless-graphql-typescript-starter.git --name project-name
+$ serverless install --url https://github.com/AmoDinho/serverless-graphql-typescript-starter --name project-name
 ```
 
 Move into the project folder:
