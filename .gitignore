@@ -50,3 +50,5 @@ env.yml
 
 # Jetbrains IDEs
 .idea
+
+/dist
