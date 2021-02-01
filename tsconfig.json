@@ -1,28 +1,8 @@
 {
-    "compilerOptions": {
-        "target": "es5",
-        "module": "esnext",
-        "outDir": "./dist",
-        "moduleResolution": "node",
-        "esModuleInterop": true,
-        "noImplicitAny": false,
-        "allowSyntheticDefaultImports": true,
-        "lib": [
-            "es2016",
-            "esnext.asynciterable"
-        ],
-        "typeRoots": [
-            "node_modules/@types/graphql"
-        ],
-        "sourceMap": true,
-        "baseUrl": "."
-    },
-    "include": [
-        "./src/**/*"
-    ],
-    "exclude": [
-        "./node_modules",
-        ".serverless",
-        ".webpack"
-    ]
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "es6",
+    "sourceMap": true,
+    "moduleResolution": "node"
+  }
 }
