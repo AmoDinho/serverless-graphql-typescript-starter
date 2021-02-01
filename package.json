@@ -1,10 +1,10 @@
 {
-  "name": "serverless-graphql-typescript-starter",
+  "name": "sasi.devops.users",
   "version": "1.1.0",
   "description": "A GraphQL Node.js starter for the Serverless Framework with async/await and unit test support",
   "main": "handler.js",
   "scripts": {
-    "offline": " sls offline ",
+    "offline": "serverless offline start",
     "watch": "tsc -w",
     "deploy": "sls deploy",
     "test": "jest"
@@ -12,37 +12,21 @@
   "author": "",
   "license": "MIT",
   "engines": {
-    "node": "10.x"
+    "node": "12.x"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/pimp-my-book/serverless-graphql-nodejs-starter"
   },
   "devDependencies": {
-    "@types/aws-lambda": "^8.10.39",
-    "@types/graphql": "^14.5.0",
-    "@types/node": "^12.12.20",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.4",
-    "babel-plugin-source-map-support": "^1.0.0",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-stage-3": "^6.24.1",
-    "jest": "^21.2.1",
-    "serverless-offline": "^3.25.6",
-    "serverless-webpack": "^5.1.0",
-    "ts-loader": "^6.2.1",
-    "tslint": "^5.20.1",
-    "tslint-config-standard": "^9.0.0",
-    "typescript": "^3.7.3",
-    "webpack": "^4.16.2",
-    "webpack-node-externals": "^1.6.0"
+    "@types/aws-lambda": "^8.10.64",
+    "@types/jest": "^26.0.14",
+    "serverless-bundle": "3.2.1",
+    "serverless-dotenv-plugin": "^2.1.1",
+    "serverless-offline": "^6.8.0"
   },
   "dependencies": {
-    "apollo-server-lambda": "^2.5.0",
-    "babel-runtime": "^6.26.0",
-    "graphql": "^14.5.8",
-    "graphql-tools": "^4.0.6",
-    "source-map-support": "^0.4.18"
+    "apollo-server-lambda": "^2.16.0",
+    "graphql": "^14.5.8"
   }
 }
